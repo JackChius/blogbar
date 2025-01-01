@@ -6,6 +6,7 @@ export default defineConfig({
   description: "A blog site with dunye",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+     logo: '/avatar.png' ,// 表示docs/public/avartar.png
     nav: [
       { text: '记录', link: '/' },
       { text: '项目', link: '/guide/' }
@@ -29,7 +30,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'gitee', link: 'https://gitee.com/dunye' }
     ]
   }
 })
