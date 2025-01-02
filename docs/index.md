@@ -17,7 +17,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /markdown-examples
+      link: /api-examples.md
     - theme: alt
       text: 专栏
       link: /guide/
@@ -27,10 +27,10 @@ features:
     title: Web开发
     details: 高效开发的忠实践行者
   - icon: 👩🎨
-    title: 喜欢美学
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    title: 简洁美学
+    details: 大音希声，大象无形
   - icon: 🧩
-    title: 无限进步
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    title: 运营增长
+    details: 精益运营，注重用户体验，实现可持续增长。
 ---
 

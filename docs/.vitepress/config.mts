@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,25 +14,39 @@ export default defineConfig({
       { text: '项目', link: '/guide/' }
     ],
 
-    sidebar: [
-      {
-        text: '开始',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      },
-      {
-        text: '专栏',
-        items: [
-          { text: '测试1', link: '/guide/' },
-          { text: '测试2', link: '/guide/tool box make myself' }
-        ]
-      }
-    ],
+    // sidebar: [
+    //   {
+    //     text: '开始',
+    //     items: [
+    //       { text: 'Markdown Examples', link: '/markdown-examples' },
+    //       { text: 'Runtime API Examples', link: '/api-examples' }
+    //     ]
+    //   },
+    //   {
+    //     text: '专栏',
+    //     items: [
+    //       { text: '测试1', link: '/guide/' },
+    //       { text: 'V工具箱', link: '/guide/V工具箱' }
+    //     ]
+    //   }
+    // ],
 
     socialLinks: [
       { icon: 'gitee', link: 'https://gitee.com/dunye' }
+    ],
+    search: {
+       provider: 'local'
+      },
+      
+  },
+  vite: {
+    plugins: [
+      // add plugin
+      AutoSidebar({
+        // You can also set options to adjust sidebar data
+        // see option document below
+        ignoreIndexItem: true
+      })
     ]
-  }
+  },
 })
